@@ -1,0 +1,197 @@
+[
+    {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science: Computers",
+            "question": "The programming language &#039;Swift&#039; was created to replace what other programming language?",
+            "correct_answer": "Objective-C",
+            "incorrect_answers": [
+              "C#",
+              "Ruby",
+              "C++"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science: Computers",
+            "question": "What language does Node.js use?",
+            "correct_answer": "JavaScript",
+            "incorrect_answers": [
+              "Java",
+              "Java Source",
+              "Joomla Source Code"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science: Computers",
+            "question": "How long is an IPv6 address?",
+            "correct_answer": "128 bits",
+            "incorrect_answers": [
+              "32 bits",
+              "64 bits",
+              "128 bytes"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science: Computers",
+            "question": "The C programming language was created by this American computer scientist. ",
+            "correct_answer": "Dennis Ritchie",
+            "incorrect_answers": [
+              "Tim Berners Lee",
+              "al-Khwārizmī",
+              "Willis Ware"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Science: Computers",
+            "question": "What does CPU stand for?",
+            "correct_answer": "Central Processing Unit",
+            "incorrect_answers": [
+              "Central Process Unit",
+              "Computer Personal Unit",
+              "Central Processor Unit"
+            ]
+          }
+        ]
+      },
+      {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Science: Computers",
+            "question": "Approximately how many Apple I personal computers were created?",
+            "correct_answer": "200",
+            "incorrect_answers": [
+              "100",
+              "500",
+              "1000"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Science: Computers",
+            "question": "What is known as &quot;the brain&quot; of the Computer?",
+            "correct_answer": "Central Processing Unit",
+            "incorrect_answers": [
+              "Motherboard",
+              "Graphics Processing Unit",
+              "Keyboard"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Science: Computers",
+            "question": "Which one of these is not an official development name for a Ubuntu release?",
+            "correct_answer": "Mystic Mansion",
+            "incorrect_answers": [
+              "Trusty Tahr",
+              "Utopic Unicorn",
+              "Wily Werewolf"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Science: Computers",
+            "question": "What does the term MIME stand for, in regards to computing?",
+            "correct_answer": "Multipurpose Internet Mail Extensions",
+            "incorrect_answers": [
+              "Mail Internet Mail Exchange",
+              "Multipurpose Interleave Mail Exchange",
+              "Mail Interleave Method Exchange"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Science: Computers",
+            "question": "All of the following programs are classified as raster graphics editors EXCEPT:",
+            "correct_answer": "Inkscape",
+            "incorrect_answers": [
+              "Paint.NET",
+              "GIMP",
+              "Adobe Photoshop"
+            ]
+          }
+        ]
+      },
+      {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "Released in 2001, the first edition of Apple&#039;s Mac OS X operating system (version 10.0) was given what animal code name?",
+            "correct_answer": "Cheetah",
+            "incorrect_answers": [
+              "Puma",
+              "Tiger",
+              "Leopard"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+            "correct_answer": "Quantum Teleportation",
+            "incorrect_answers": [
+              "Super Dense Coding",
+              "Quantum Entanglement",
+              "Quantum Programming"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "How many Hz does the video standard PAL support?",
+            "correct_answer": "50",
+            "incorrect_answers": [
+              "59",
+              "60",
+              "25"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "What major programming language does Unreal Engine 4 use?",
+            "correct_answer": "C++",
+            "incorrect_answers": [
+              "Assembly",
+              "C#",
+              "ECMAScript"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "Which of these Cherry MX mechanical keyboard switches is both tactile and clicky?",
+            "correct_answer": "Cherry MX Blue",
+            "incorrect_answers": [
+              "Cherry MX Black",
+              "Cherry MX Red",
+              "Cherry MX Brown"
+            ]
+          }
+        ]
+      }
+]

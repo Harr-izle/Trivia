@@ -1,0 +1,197 @@
+[
+    {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "History",
+            "question": "How old was Adolf Hitler when he died?",
+            "correct_answer": "56",
+            "incorrect_answers": [
+              "43",
+              "65",
+              "47"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "History",
+            "question": "Which famous world leader is famed for the saying, &quot;Let them eat cake&quot;, yet is rumored that he/she never said it at all?",
+            "correct_answer": "Marie Antoinette",
+            "incorrect_answers": [
+              "Czar Nicholas II",
+              "Elizabeth I",
+              "Henry VIII"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "History",
+            "question": "Who was the first president of the United States?",
+            "correct_answer": "George Washington",
+            "incorrect_answers": [
+              "James Madison",
+              "Thomas Jefferson",
+              "James K. Polk"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "History",
+            "question": "In 1720, England was in massive debt and became involved in the South Sea Bubble. Who was the main mastermind behind it?",
+            "correct_answer": "John Blunt",
+            "incorrect_answers": [
+              "Daniel Defoe",
+              "Robert Harley",
+              "John Churchill"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "History",
+            "question": "The &quot;Trail of Tears&quot; was a result of which United States President&#039;s Indian Removal Policy?",
+            "correct_answer": "Andrew Jackson",
+            "incorrect_answers": [
+              "Harry S. Truman",
+              "Martin Van Buren",
+              "John Quincy Adams"
+            ]
+          }
+        ]
+      },
+      {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "History",
+            "question": "How many times was Albert Einstein married in his lifetime?",
+            "correct_answer": "Twice",
+            "incorrect_answers": [
+              "Five",
+              "Thrice",
+              "Once"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "History",
+            "question": "In what year was the video game company Electronic Arts founded?",
+            "correct_answer": "1982",
+            "incorrect_answers": [
+              "1999",
+              "1981",
+              "2005"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "History",
+            "question": "What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as &quot;Skoal Bandits&quot;?",
+            "correct_answer": "1983",
+            "incorrect_answers": [
+              "1934",
+              "1984",
+              "1822"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "History",
+            "question": "Which country gifted the Statue of Liberty to the United States of America?",
+            "correct_answer": "France",
+            "incorrect_answers": [
+              "Spain",
+              "England",
+              "Germany"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "History",
+            "question": "Which of the following Assyrian kings did NOT rule during the Neo-Assyrian Empire?",
+            "correct_answer": "Shamshi-Adad III",
+            "incorrect_answers": [
+              "Shalmaneser V",
+              "Esharhaddon",
+              "Ashur-nasir-pal II"
+            ]
+          }
+        ]
+      },
+      {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "History",
+            "question": "How many women joined the United States Armed Services during World War II?",
+            "correct_answer": "350,000",
+            "incorrect_answers": [
+              "225,000",
+              "100,000",
+              "500,000"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "History",
+            "question": "How long did the Warsaw Uprising during World War II last?",
+            "correct_answer": "63 Days",
+            "incorrect_answers": [
+              "20 Days",
+              "55 Days",
+              "224 Days"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "History",
+            "question": "Which of the following was not one of Joseph Stalin&#039;s ten blows during World War II?",
+            "correct_answer": "Vistula-Oder Offensive",
+            "incorrect_answers": [
+              "Crimean Offensive",
+              "Leningrad-Novgorod Offensive",
+              "Operation Bagration"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "History",
+            "question": "The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?",
+            "correct_answer": "Justinian I",
+            "incorrect_answers": [
+              "Constantine IV",
+              "Arcadius",
+              "Theodosius the Great"
+            ]
+          },
+          {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "History",
+            "question": "Which of these theoretical phycisists first predicted the existence of antimatter?",
+            "correct_answer": "Paul Dirac",
+            "incorrect_answers": [
+              "Niels Bohr",
+              "Albert Einstein",
+              "Werner Heisenberg"
+            ]
+          }
+        ]
+      }
+]

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#welcome h3 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#welcome p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.category-container h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.category {
+    width: 50%;
+    height:400px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Space between the grid items */
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#card {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    background-color: red;
+    border-radius: 10px; 
+}
+
+
