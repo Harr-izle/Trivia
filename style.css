@@ -10,8 +10,10 @@ body, html {
     height: 100%;
 }
 
+/* landingpage */
+
 .container {
-    background-color: blue;
+    background-color:  #03033F;
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -21,6 +23,7 @@ body, html {
 #welcome {
     text-align: center;
     font-size: 30px;
+    color: white;
     
 }
 
@@ -32,6 +35,7 @@ body, html {
 #welcome p {
     margin-top: 30px;
     font-size: 20px;
+    color: white;
 }
 .category-container {
     display: flex;
@@ -46,6 +50,7 @@ body, html {
     font-size: 25px;
     font-weight: bold;
     text-transform: capitalize;
+    color: white;
 }
 
 .category {
@@ -58,12 +63,227 @@ body, html {
     margin-top: 20px;
 }
 
-#card {
+.card {
     width: 200px;
     height: 200px;
+    padding: 30px;
     box-sizing: border-box;
-    background-color: red;
+    background-color: #020232;
     border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 0 25px rgba(50, 50, 255, 0.7);
+    transform: translateY(-5px);
+}
+.fa-solid, .fa-sharp{
+    font-size: 50px;
+}
+.card h1{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+/* The Modal  */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.8); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #03033F;
+    margin: 0; 
+    padding: 20px;
+    border: none;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+.page{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+}
+#difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 0 30px rgba(20, 20, 255, 0.4);
+    padding: 20px;
+    background-color: #020232;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+#difficulty:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 0 40px rgba(40, 40, 255, 0.6);
+}
+
+.difficulty-btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
+.trivia {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 0 20px rgba(50, 50, 255, 0.5),
+                0 0 40px rgba(100, 100, 255, 0.3);
+    padding: 20px;
+    background-color: #020232;
+    width: 50%;
+    height: 400px;
+    margin-top: 50px;  
+}
+
+
+
+.question {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;;
+}
+
+.options {
+    display: flex;
+    flex-direction: column; 
+}
+
+.options label {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options label:hover {
+    background-color: #e9e9e9;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  
+    
+}
+.circle:hover {
+    background-color: #2980b9;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 90px;
+}
+
+
+
+
+
+
+
+
+/* animations */
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.2, 1.05, 1.05);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .pulse {
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+  }
+
+
+.fa-solid{
+    animation: pulse 3s ease-in-out infinite alternate;
+}
+
+.fa-sharp{
+    animation: pulse 3s ease-in-out infinite alternate;
+}

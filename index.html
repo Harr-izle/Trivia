@@ -4,28 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17b4c338c3.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div id="welcome">
-            <h3>Hi Mary,Welcome to the trivia</h3>
+            <h3>Welcome to the trivia</h3>
             <p>Select a category to start a trivia</p>
         </div>
 
         <div class="category-container">
             <h3>Categories</h3>
             <div class="category">
-                <div id="card"></div>
-                <div id="card"></div>
-                <div id="card"></div>
-                <div id="card"></div>
-                <div id="card"></div>
-                <div id="card"></div>
-    
+                <div class="card"><i class="fa-solid fa-book-atlas" style="color: #fbf546; display: block;"></i><h1>Geography</h1></div>
+                <div class="card"><i class="fa-sharp fa-regular fa-clock-rotate-left" style="color: #f5d784;  display: block;"></i><h1>History</h1></div>
+                <div class="card"><i class="fa-solid fa-music" style="color: #e70d0d;  display: block;  display: block;"></i><h1>Music</h1></div>
+                <div class="card"><i class="fa-solid fa-atom fa-flip-horizontal" style="color: #74C0FC;  display: block;"></i><h1>Science</h1></div>
+                <div class="card"><i class="fa-solid fa-medal" style="color: #11be0e;  display: block;"></i><h1>Sports</h1></div>
+                <div class="card"><i class="fa-solid fa-sim-card" style="color: #3a5b73;  display: block;"></i><h1>Technology</h1></div>
             </div>
         </div>
-
     </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Start a trivia</p>
+
+         <div class="page">
+            <div class="option">
+                <p style="margin-left: 20px;">Difficulty</p>
+                <section id="difficulty">
+                    <button class="difficulty-btn">Easy</button>
+                    <button class="difficulty-btn">Medium</button>
+                    <button class="difficulty-btn">Hard</button>
+                </section>
+                </div>
+    
+                <!-- question -->
+                <div class="trivia">
+                    <div id="questions">
+                        <!-- current questions -->
+                        <div class="circle-container">
+                            <a href="#" class="circle">1</a>
+                            <a href="#" class="circle">2</a>
+                            <a href="#" class="circle">3</a>
+                            <a href="#" class="circle">4</a>
+                            <a href="#" class="circle">5</a>
+                        </div>
+            
+                        <div class="question">What is the capital of France?</div>
+                        <div class="options">
+                            <label><input type="radio" name="answer" value="A"> ParisHJEWGLFKJAGH;EFGFKHJGH'LHGJ
+                            KHJ</label>
+                            <label><input type="radio" name="answer" value="B"> Madrid</label>
+                            <label><input type="radio" name="answer" value="C"> Rome</label>
+                            <label><input type="radio" name="answer" value="D"> Berlin</label>
+                        </div>
+                    </div>
+                </div>
+         </div>
+            
+
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
