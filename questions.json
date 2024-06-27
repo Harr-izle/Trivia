@@ -1,1175 +1,1265 @@
 {
-    "response_code": 0,
-    "results": [
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Geography",
-        "question": "How many countries does the United States share a land border with?",
-        "correct_answer": "2",
-        "answers": [
-          "1",
-          "3",
-          "4",
-          "2"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Geography",
-        "question": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
-        "correct_answer": "Ohio",
-        "answers": [
-          "Florida",
-          "Ohio",
-          "Idaho",
-          "New Mexico"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Geography",
-        "question": "Where would you find the &quot;Spanish Steps&quot;?",
-        "correct_answer": "Rome, Italy",
-        "answers": [
-            "Rome, Italy",
-          "Barcelona, Spain",
-          "Berlin, Germany",
-          "London, England"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Geography",
-        "question": "What is the capital of Indonesia?",
-        "correct_answer": "Jakarta",
-        "answers": [
-          "Bandung",
-          "Medan",
-          "Jakarta",
-          "Palembang"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Geography",
-        "question": "What is the smallest country in the world?",
-        "correct_answer": "Vatican City",
-        "answers": [
-          "Maldives",
-          "Vatican City",
-          "Monaco",
-          "Malta"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Geography",
-        "question": "How many provinces are in the Netherlands?",
-        "correct_answer": "12",
-        "answers": [
-          "14",
-          "10",
-          "13",
-          "12"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Geography",
-        "question": "Which of these Japanese islands is the largest by area?",
-        "correct_answer": "Shikoku",
-        "answers": [
-            "Shikoku",
-          "Iki",
-          "Odaiba",
-          "Okinawa"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Geography",
-        "question": "What is the capital of Senegal?",
-        "correct_answer": "Dakar",
-        "answers": [
-          "Nouakchott",
-          "Dakar",
-          "Conakry",
-          "Monrovia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Geography",
-        "question": "Which city is the capital of Switzerland?",
-        "correct_answer": "Bern",
-        "answers": [
-          "Z&uuml;rich",
-          "Frankfurt",
-          "Bern",
-          "Wien"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Geography",
-        "question": "What European country is not a part of the EU?",
-        "correct_answer": "Norway",
-        "answers": [
-          "Lithuania",
-          "Ireland",
-          "Norway",
-          "Czechia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Geography",
-        "question": "The Hunua Ranges is located in...",
-        "correct_answer": "New Zealand",
-        "answers": [
-          "Nepal",
-          "China",
-          "Mexico",
-          "New Zealand"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Geography",
-        "question": "What is the tallest mountain in Canada?",
-        "correct_answer": "Mount Logan",
-        "answers": [
-          "Mont Tremblant",
-          "Mount Logan",
-          "Whistler Mountain",
-          "Blue Mountain"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Geography",
-        "question": "What city is known as the Rose Capital of the World?",
-        "correct_answer": "Tyler, Texas",
-        "answers": [
-          "San Diego, California",
-          "Miami, Florida",
-          "Tyler, Texas",
-          "Anaheim, California"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Geography",
-        "question": "Which country is the Taedong River in?",
-        "correct_answer": "North Korea",
-        "answers": [
-          "South Korea",
-          "North Korea",
-          "Japan",
-          "China"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Geography",
-        "question": "What is the land connecting North America and South America?",
-        "correct_answer": "Isthmus of Panama",
-        "answers": [
-        "Isthmus of Panama",
-          "Isthmus of Suez",
-          "Urals",
-          "Australasia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "History",
-        "question": "Who was the Prime Minister of Japan when Japan declared war on the US?",
-        "correct_answer": "Hideki Tojo",
-        "answers": [
-          "Michinomiya Hirohito",
-          "Isoroku Yamamoto",
-          "Fumimaro Konoe"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "History",
-        "question": "The idea of Socialism was articulated and advanced by whom?",
-        "correct_answer": "Karl Marx",
-        "answers": [
-          "Vladimir Lenin",
-          "Joseph Stalin",
-          "Vladimir Putin"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "History",
-        "question": "What does the United States of America celebrate during the 4th of July?",
-        "correct_answer": "The signing of the Declaration of Independence",
-        "answers": [
-          "The anniversary of the Battle of Gettysburg",
-          "The signing of the Declaration of Independence",
-          "The crossing of the Delaware River",
-          "The ratification of the Constitution"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "History",
-        "question": "Who was among those killed in the 2010 Smolensk, Russia plane crash tragedy?",
-        "correct_answer": "The Polish President",
-        "answers": [
-          "Pope John Paul II",
-          "Bang-Ding Ow",
-          "Albert Putin",
-          "The Polish President"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "History",
-        "question": "King Henry VIII was the second monarch of which European royal house?",
-        "correct_answer": "Tudor",
-        "answers": [
-            "Tudor",
-          "York",
-          "Stuart",
-          "Lancaster"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "History",
-        "question": "What was the bloodiest single-day battle during the American Civil War?",
-        "correct_answer": "The Battle of Antietam",
-        "answers": [
-          "The Siege of Vicksburg",
-          "The Battle of Antietam",
-          "The Battle of Gettysburg",
-          "The Battles of Chancellorsville"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "History",
-        "question": "The minigun was designed in 1960 by which manufacturer.",
-        "correct_answer": "General Electric",
-        "answers": [
-          "Colt Firearms",
-          "Heckler &amp; Koch",
-          "Sig Sauer",
-          "General Electric"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "History",
-        "question": "Who was the Prime Minister of the United Kingdom for most of World War II?",
-        "correct_answer": "Winston Churchill",
-        "answers": [
-            "Winston Churchill",
-          "Neville Chamberlain",
-          "Harold Macmillan",
-          "Edward Heath"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "History",
-        "question": "When did Jamaica recieve its independence from England? ",
-        "correct_answer": "1962",
-        "answers": [
-          "1492",
-          "1963",
-          "1962",
-          "1987"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "History",
-        "question": "Which Louis was known as &#039;The Sun King of France&#039;?",
-        "correct_answer": "Louis XIV",
-        "answers": [
-          "Louis XIII",
-          "Louis XIV",
-          "Louis XV",
-          "Louis XVI"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "History",
-        "question": "What did the first vending machines in the early 1880&#039;s dispense?",
-        "correct_answer": "Post cards",
-        "answers": [
-          "Alcohol",
-          "Post cards",
-          "Cigarettes",
-          "Sodas "
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "History",
-        "question": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
-        "correct_answer": "Nationalist Spain",
-        "answers": [
-          "Republican Spain",
-          "Popular Front",
-          "Papal State",
-          "Nationalist Spain"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "History",
-        "question": "Which one of these rulers did not belong to the Habsburg dynasty?",
-        "correct_answer": "Philip V",
-        "answers": [
-          "Charles V",
-          "Philip V",
-          "Philip II",
-          "Francis Joseph"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "History",
-        "question": "List the following Iranic empires in chronological order:",
-        "correct_answer": "Median, Achaemenid, Parthian, Sassanid",
-        "answers": [
-            "Median, Achaemenid, Parthian, Sassanid",
-          "Median, Achaemenid, Sassanid, Parthian",
-          "Achaemenid, Median, Parthian, Sassanid",
-          "Achaemenid, Median, Sassanid, Parthian"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "History",
-        "question": "What was found in 1946 by two young shepards near a cave?",
-        "correct_answer": "Dead Sea Scrolls",
-        "answers": [
-          "The Blackbeard Chest",
-          "Dead Sea Scrolls",
-          "Sheep",
-          "The First Oaxaca Cave Sleeper"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Music",
-        "question": "How many studio albums have the duo Daft Punk released?",
-        "correct_answer": "4",
-        "answers": [
-          "1",
-          "5",
-          "2",
-          "4"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Music",
-        "question": "Who is the lead singer of Arctic Monkeys?",
-        "correct_answer": "Alex Turner",
-        "answers": [
-            "Alex Turner",
-          "Jamie Cook",
-          "Matt Helders",
-          "Nick O&#039;Malley"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Music",
-        "question": "Which 80s band is fronted by singer/guitarist Robert Smith?",
-        "correct_answer": "The Cure",
-        "answers": [
-          "The Smiths",
-          "The Cure",
-          "Echo &amp; the Bunnymen",
-          "New Order"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Music",
-        "question": "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song &quot;Paper Planes&quot;?",
-        "correct_answer": "M.I.A.",
-        "answers": [
-          "K.I.A.",
-          "C.I.A.",
-          "M.I.A.",
-          "A.I.A."
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Music",
-        "question": "Which music publication is often abbreviated to NME?",
-        "correct_answer": "New Musical Express",
-        "answers": [
-          "New Metro Entertainment",
-          "Next Musical Enterprise",
-          "New Musical Express",
-          "North Manchester Express"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Music",
-        "question": "Which of these is not a song on the album Graduation by Kanye West?",
-        "correct_answer": "Waves",
-        "answers": [
-          "I Wonder",
-          "Big Brother",
-          "Waves",
-          "The Glory"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Music",
-        "question": "Which of these is not an Ed Sheeran album?",
-        "correct_answer": "-",
-        "answers": [
-          "+",
-          "X",
-          "-",
-          "&divide;"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Music",
-        "question": "Who had a 1973 hit with the song &#039;Hocus Pocus&#039;?",
-        "correct_answer": "Focus",
-        "answers": [
-            "Focus",
-          "Pilot",
-          "Rush",
-          "AC/DC"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Music",
-        "question": "When did The Beatles release the LP &quot;Please Please Me&quot;?",
-        "correct_answer": "1963",
-        "answers": [
-          "1970",
-          "1960",
-          "1969",
-          "1963"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Music",
-        "question": "Which Beatle wrote and sang the song &quot;Why Don&#039;t We Do It in the Road&quot; after being inspired by seeing two monkeys copulating in the street?",
-        "correct_answer": "Paul",
-        "answers": [
-          "John",
-          "Paul",
-          "George",
-          "Ringo"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Music",
-        "question": "The key of sharps does the key of G# minor contain?",
-        "correct_answer": "5",
-        "answers": [
-          "3",
-          "7",
-          "0",
-          "5"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Entertainment: Music",
-        "question": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
-        "correct_answer": "Snare Drum",
-        "answers": [
-          "Cow Bell",
-          "Snare Drum",
-          "Bass Drum",
-          "Maraca"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Music",
-        "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
-        "correct_answer": "Revolver",
-        "answers": [
-          "Help!",
-          "Rubber Soul",
-          "Revolver",
-          "Abbey Road"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Music",
-        "question": "Electronic artists Boys Noize and Skrillex have collaborated and released tracks under what name?",
-        "correct_answer": "Dog Blood",
-        "answers": [
-            "Dog Blood",
-          "Jack &Uuml;",
-          "What So Not",
-          "Noisia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Music",
-        "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
-        "correct_answer": "Left Alone",
-        "answers": [
-          "What About Us",
-          "This Song Is Not About A Girl",
-          "This Song Is Not About A Girl",
-          "Drop The Game"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Science",
-        "question": "What is the standard atomic weight of a Plutonium nucleus?",
-        "correct_answer": "244",
-        "answers": [
-          "94",
-          "244",
-          "481",
-          "128"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Science",
-        "question": "How many bones are in the human body?",
-        "correct_answer": "206",
-        "answers": [
-          "203",
-          "206",
-          "209",
-          "200"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Science",
-        "question": "What is the speed of light in a vacuum?",
-        "correct_answer": "299,792,458 m/s",
-        "answers": [
-            "299,792,458 m/s",
-          "50,461 m/s",
-          "308,215,043 m/s",
-          "751,665,014,151 m/s"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Science",
-        "question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
-        "correct_answer": "Cat",
-        "answers": [
-          "Dog",
-          "Bat",
-          "Butterfly",
-          "Cat"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Science",
-        "question": "This element, when overcome with extreme heat and pressure, creates diamonds.",
-        "correct_answer": "Carbon",
-        "answers": [
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question_number":"1",
+      "question": "How many countries does the United States share a land border with?",
+      "correct_answer": "2",
+      "answers": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question_number":"2",
+      "question": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
+      "correct_answer": "Ohio",
+      "answers": [
+        "Florida",
+        "Ohio",
+        "Idaho",
+        "New Mexico"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question_number":"3",
+      "question": "Where would you find the &quot;Spanish Steps&quot;?",
+      "correct_answer": "Rome, Italy",
+      "answers": [
+          "Rome, Italy",
+        "Barcelona, Spain",
+        "Berlin, Germany",
+        "London, England"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question_number":"4",
+      "question": "What is the capital of Indonesia?",
+      "correct_answer": "Jakarta",
+      "answers": [
+        "Bandung",
+        "Medan",
+        "Jakarta",
+        "Palembang"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question_number":"5",
+      "question": "What is the smallest country in the world?",
+      "correct_answer": "Vatican City",
+      "answers": [
+        "Maldives",
+        "Vatican City",
+        "Monaco",
+        "Malta"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question_number":"1",
+      "question": "How many provinces are in the Netherlands?",
+      "correct_answer": "12",
+      "answers": [
+        "14",
+        "10",
+        "13",
+        "12"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question_number":"2",
+      "question": "Which of these Japanese islands is the largest by area?",
+      "correct_answer": "Shikoku",
+      "answers": [
+          "Shikoku",
+        "Iki",
+        "Odaiba",
+        "Okinawa"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question_number":"3",
+      "question": "What is the capital of Senegal?",
+      "correct_answer": "Dakar",
+      "answers": [
+        "Nouakchott",
+        "Dakar",
+        "Conakry",
+        "Monrovia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question_number":"4",
+      "question": "Which city is the capital of Switzerland?",
+      "correct_answer": "Bern",
+      "answers": [
+        "Z&uuml;rich",
+        "Frankfurt",
+        "Bern",
+        "Wien"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question_number":"5",
+      "question": "What European country is not a part of the EU?",
+      "correct_answer": "Norway",
+      "answers": [
+        "Lithuania",
+        "Ireland",
+        "Norway",
+        "Czechia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question_number":"1",
+      "question": "The Hunua Ranges is located in...",
+      "correct_answer": "New Zealand",
+      "answers": [
+        "Nepal",
+        "China",
+        "Mexico",
+        "New Zealand"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question_number":"2",
+      "question": "What is the tallest mountain in Canada?",
+      "correct_answer": "Mount Logan",
+      "answers": [
+        "Mont Tremblant",
+        "Mount Logan",
+        "Whistler Mountain",
+        "Blue Mountain"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question_number":"3",
+      "question": "What city is known as the Rose Capital of the World?",
+      "correct_answer": "Tyler, Texas",
+      "answers": [
+        "San Diego, California",
+        "Miami, Florida",
+        "Tyler, Texas",
+        "Anaheim, California"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question_number":"4",
+      "question": "Which country is the Taedong River in?",
+      "correct_answer": "North Korea",
+      "answers": [
+        "South Korea",
+        "North Korea",
+        "Japan",
+        "China"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geography",
+      "question_number":"5",
+      "question": "What is the land connecting North America and South America?",
+      "correct_answer": "Isthmus of Panama",
+      "answers": [
+      "Isthmus of Panama",
+        "Isthmus of Suez",
+        "Urals",
+        "Australasia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question_number":"1",
+      "question": "Who was the Prime Minister of Japan when Japan declared war on the US?",
+      "correct_answer": "Hideki Tojo",
+      "answers": [
+        "Michinomiya Hirohito",
+        "Isoroku Yamamoto",
+        "Fumimaro Konoe"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question_number":"2",
+      "question": "The idea of Socialism was articulated and advanced by whom?",
+      "correct_answer": "Karl Marx",
+      "answers": [
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Vladimir Putin"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question_number":"3",
+      "question": "What does the United States of America celebrate during the 4th of July?",
+      "correct_answer": "The signing of the Declaration of Independence",
+      "answers": [
+        "The anniversary of the Battle of Gettysburg",
+        "The signing of the Declaration of Independence",
+        "The crossing of the Delaware River",
+        "The ratification of the Constitution"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question_number":"4",
+      "question": "Who was among those killed in the 2010 Smolensk, Russia plane crash tragedy?",
+      "correct_answer": "The Polish President",
+      "answers": [
+        "Pope John Paul II",
+        "Bang-Ding Ow",
+        "Albert Putin",
+        "The Polish President"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question_number":"5",
+      "question": "King Henry VIII was the second monarch of which European royal house?",
+      "correct_answer": "Tudor",
+      "answers": [
+          "Tudor",
+        "York",
+        "Stuart",
+        "Lancaster"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question_number":"1",
+      "question": "What was the bloodiest single-day battle during the American Civil War?",
+      "correct_answer": "The Battle of Antietam",
+      "answers": [
+        "The Siege of Vicksburg",
+        "The Battle of Antietam",
+        "The Battle of Gettysburg",
+        "The Battles of Chancellorsville"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question_number":"2",
+      "question": "The minigun was designed in 1960 by which manufacturer.",
+      "correct_answer": "General Electric",
+      "answers": [
+        "Colt Firearms",
+        "Heckler &amp; Koch",
+        "Sig Sauer",
+        "General Electric"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question_number":"3",
+      "question": "Who was the Prime Minister of the United Kingdom for most of World War II?",
+      "correct_answer": "Winston Churchill",
+      "answers": [
+          "Winston Churchill",
+        "Neville Chamberlain",
+        "Harold Macmillan",
+        "Edward Heath"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question_number":"4",
+      "question": "When did Jamaica recieve its independence from England? ",
+      "correct_answer": "1962",
+      "answers": [
+        "1492",
+        "1963",
+        "1962",
+        "1987"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question_number":"5",
+      "question": "Which Louis was known as &#039;The Sun King of France&#039;?",
+      "correct_answer": "Louis XIV",
+      "answers": [
+        "Louis XIII",
+        "Louis XIV",
+        "Louis XV",
+        "Louis XVI"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question_number":"1",
+      "question": "What did the first vending machines in the early 1880&#039;s dispense?",
+      "correct_answer": "Post cards",
+      "answers": [
+        "Alcohol",
+        "Post cards",
+        "Cigarettes",
+        "Sodas "
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question_number":"2",
+      "question": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
+      "correct_answer": "Nationalist Spain",
+      "answers": [
+        "Republican Spain",
+        "Popular Front",
+        "Papal State",
+        "Nationalist Spain"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question_number":"3",
+      "question": "Which one of these rulers did not belong to the Habsburg dynasty?",
+      "correct_answer": "Philip V",
+      "answers": [
+        "Charles V",
+        "Philip V",
+        "Philip II",
+        "Francis Joseph"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question_number":"4",
+      "question": "List the following Iranic empires in chronological order:",
+      "correct_answer": "Median, Achaemenid, Parthian, Sassanid",
+      "answers": [
+          "Median, Achaemenid, Parthian, Sassanid",
+        "Median, Achaemenid, Sassanid, Parthian",
+        "Achaemenid, Median, Parthian, Sassanid",
+        "Achaemenid, Median, Sassanid, Parthian"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question_number":"5",
+      "question": "What was found in 1946 by two young shepards near a cave?",
+      "correct_answer": "Dead Sea Scrolls",
+      "answers": [
+        "The Blackbeard Chest",
+        "Dead Sea Scrolls",
+        "Sheep",
+        "The First Oaxaca Cave Sleeper"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Music",
+      "question_number":"1",
+      "question": "How many studio albums have the duo Daft Punk released?",
+      "correct_answer": "4",
+      "answers": [
+        "1",
+        "5",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Music",
+      "question_number":"2",
+      "question": "Who is the lead singer of Arctic Monkeys?",
+      "correct_answer": "Alex Turner",
+      "answers": [
+          "Alex Turner",
+        "Jamie Cook",
+        "Matt Helders",
+        "Nick O&#039;Malley"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Music",
+      "question_number":"3",
+      "question": "Which 80s band is fronted by singer/guitarist Robert Smith?",
+      "correct_answer": "The Cure",
+      "answers": [
+        "The Smiths",
+        "The Cure",
+        "Echo &amp; the Bunnymen",
+        "New Order"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Music",
+      "question_number":"4",
+      "question": "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song &quot;Paper Planes&quot;?",
+      "correct_answer": "M.I.A.",
+      "answers": [
+        "K.I.A.",
+        "C.I.A.",
+        "M.I.A.",
+        "A.I.A."
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Music",
+      "question_number":"5",
+      "question": "Which music publication is often abbreviated to NME?",
+      "correct_answer": "New Musical Express",
+      "answers": [
+        "New Metro Entertainment",
+        "Next Musical Enterprise",
+        "New Musical Express",
+        "North Manchester Express"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Music",
+      "question_number":"1",
+      "question": "Which of these is not a song on the album Graduation by Kanye West?",
+      "correct_answer": "Waves",
+      "answers": [
+        "I Wonder",
+        "Big Brother",
+        "Waves",
+        "The Glory"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Music",
+      "question_number":"2",
+      "question": "Which of these is not an Ed Sheeran album?",
+      "correct_answer": "-",
+      "answers": [
+        "+",
+        "X",
+        "-",
+        "&divide;"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Music",
+      "question_number":"3",
+      "question": "Who had a 1973 hit with the song &#039;Hocus Pocus&#039;?",
+      "correct_answer": "Focus",
+      "answers": [
+          "Focus",
+        "Pilot",
+        "Rush",
+        "AC/DC"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Music",
+      "question_number":"4",
+      "question": "When did The Beatles release the LP &quot;Please Please Me&quot;?",
+      "correct_answer": "1963",
+      "answers": [
+        "1970",
+        "1960",
+        "1969",
+        "1963"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Music",
+      "question_number":"5",
+      "question": "Which Beatle wrote and sang the song &quot;Why Don&#039;t We Do It in the Road&quot; after being inspired by seeing two monkeys copulating in the street?",
+      "correct_answer": "Paul",
+      "answers": [
+        "John",
+        "Paul",
+        "George",
+        "Ringo"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Music",
+      "question_number":"1",
+      "question": "The key of sharps does the key of G# minor contain?",
+      "correct_answer": "5",
+      "answers": [
+        "3",
+        "7",
+        "0",
+        "5"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Music",
+      "question_number":"2",
+      "question": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
+      "correct_answer": "Snare Drum",
+      "answers": [
+        "Cow Bell",
+        "Snare Drum",
+        "Bass Drum",
+        "Maraca"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Music",
+      "question_number":"3",
+      "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+      "correct_answer": "Revolver",
+      "answers": [
+        "Help!",
+        "Rubber Soul",
+        "Revolver",
+        "Abbey Road"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Music",
+      "question_number":"4",
+      "question": "Electronic artists Boys Noize and Skrillex have collaborated and released tracks under what name?",
+      "correct_answer": "Dog Blood",
+      "answers": [
+          "Dog Blood",
+        "Jack &Uuml;",
+        "What So Not",
+        "Noisia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Music",
+      "question_number":"5",
+      "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
+      "correct_answer": "Left Alone",
+      "answers": [
+        "What About Us",
+        "This Song Is Not About A Girl",
+        "This Song Is Not About A Girl",
+        "Drop The Game"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science",
+      "question_number":"1",
+      "question": "What is the standard atomic weight of a Plutonium nucleus?",
+      "correct_answer": "244",
+      "answers": [
+        "94",
+        "244",
+        "481",
+        "128"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science",
+      "question_number":"2",
+      "question": "How many bones are in the human body?",
+      "correct_answer": "206",
+      "answers": [
+        "203",
+        "206",
+        "209",
+        "200"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science",
+      "question_number":"3",
+      "question": "What is the speed of light in a vacuum?",
+      "correct_answer": "299,792,458 m/s",
+      "answers": [
+          "299,792,458 m/s",
+        "50,461 m/s",
+        "308,215,043 m/s",
+        "751,665,014,151 m/s"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science",
+      "question_number":"4",
+      "question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
+      "correct_answer": "Cat",
+      "answers": [
+        "Dog",
+        "Bat",
+        "Butterfly",
+        "Cat"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science",
+      "question_number":"5",
+      "question": "This element, when overcome with extreme heat and pressure, creates diamonds.",
+      "correct_answer": "Carbon",
+      "answers": [
+        "Nitrogen",
+        "Carbon",
+        "Oxygen",
+        "Hydrogen"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science",
+      "question_number":"1",
+      "question": "The medical condition osteoporosis affects which part of the body?",
+      "correct_answer": "Bones",
+      "answers": [
+        "Skin",
+        "Bones",
+        "Brain",
+        "Heart"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science",
+      "question_number":"2",
+      "question": "Which of these is a type of stretch/deep tendon reflex?",
+      "correct_answer": "Ankle jerk reflex",
+      "answers": [
+        "Gag reflex",
+        "Pupillary light reflex",
+        "Scratch reflex",
+        "Ankle jerk reflex"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science",
+      "question_number":"3",
+      "question": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
+      "correct_answer": "Nitrogen",
+      "answers": [
           "Nitrogen",
-          "Carbon",
-          "Oxygen",
-          "Hydrogen"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Science",
-        "question": "The medical condition osteoporosis affects which part of the body?",
-        "correct_answer": "Bones",
-        "answers": [
-          "Skin",
-          "Bones",
-          "Brain",
-          "Heart"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Science",
-        "question": "Which of these is a type of stretch/deep tendon reflex?",
-        "correct_answer": "Ankle jerk reflex",
-        "answers": [
-          "Gag reflex",
-          "Pupillary light reflex",
-          "Scratch reflex",
-          "Ankle jerk reflex"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Science",
-        "question": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
-        "correct_answer": "Nitrogen",
-        "answers": [
-            "Nitrogen",
-          "Helium",
-          "Carbon",
-          "Hydrogen"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Science",
-        "question": "What is the molecular formula of the active component of chili peppers(Capsaicin)?",
-        "correct_answer": "C18H27NO3",
-        "answers": [
-          "C21H23NO3",
-          "C18H27NO3",
-          "C6H4Cl2",
-          "C13H25NO4"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Science",
-        "question": "What is the chemical formula for ammonia?",
-        "correct_answer": "NH3",
-        "answers": [
-          "CO2",
-          "NO3",
-          "NH3",
-          "CH4"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Science",
-        "question": "Which is the chemical name of H2O?",
-        "correct_answer": "Dihydrogen Monoxide",
-        "answers": [
-          "Ammonium chloride",
-          "Dihydrogen Monoxide",
-          "Anhydrous Sodium Carbonate",
-          "Manganese dioxide"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Science",
-        "question": "Burning which of these metals will produce a bright white flame?",
-        "correct_answer": "Magnesium",
-        "answers": [
-          "Copper",
-          "Magnesium",
-          "Lithium",
-          "Lead"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Science",
-        "question": "What is &quot;Stenoma&quot;?",
-        "correct_answer": "A genus of moths",
-        "answers": [
-          "A combat stimulant from WW2",
-          "A type of seasoning",
-          "A port city in the carribean",
-          "A genus of moths"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Science",
-        "question": "Which of the following liquids is least viscous? Assume temperature is 25&deg;C.",
-        "correct_answer": "Acetone",
-        "answers": [
-            "Acetone",
-          "Water",
-          "Mercury",
-          "Benzene"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Science",
-        "question": "The Western Lowland Gorilla is scientifically know as?",
-        "correct_answer": "Gorilla Gorilla Gorilla",
-        "answers": [
-          "Gorilla Gorilla Diehli",
-          "Gorilla Gorilla Beringei",
-          "Gorilla Beringei Graueri",
-          "Gorilla Beringei Beringei"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Sports",
-        "question": "How many points did LeBron James score in his first NBA game?",
-        "correct_answer": "25",
-        "answers": [
-          "19",
-          "25",
-          "69",
-          "41"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Sports",
-        "question": "What is the name of Manchester United&#039;s home stadium?",
-        "correct_answer": "Old Trafford",
-        "answers": [
-            "Old Trafford",
-          "Anfield",
-          "City of Manchester Stadium",
-          "St James Park"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Sports",
-        "question": "When was the first official international game played?",
-        "correct_answer": "1872",
-        "answers": [
-          "1880",
-          "1863",
-          "1865",
-          "1872"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Sports",
-        "question": "In bowling, what is the term used for getting three consecutive strikes?",
-        "correct_answer": "Turkey",
-        "answers": [
-          "Flamingo",
-          "Birdie",
-          "Turkey",
-          "Eagle"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Sports",
-        "question": "In golf, what name is given to a hole score of two under par?",
-        "correct_answer": "Eagle",
-        "answers": [
-          "Birdie",
-          "Eagle",
-          "Bogey",
-          "Albatross"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Sports",
-        "question": "At which bridge does the annual Oxford and Cambridge boat race start?",
-        "correct_answer": "Putney",
-        "answers": [
-            "Putney",
-          "Hammersmith",
-          "Vauxhall ",
-          "Battersea"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Sports",
-        "question": "What country hosted the 2014 Winter Olympics?",
-        "correct_answer": "Russia",
-        "answers": [
-          "Canada",
-          "United States",
-          "Germany",
-          "Russia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Sports",
-        "question": "Which soccer team won the Copa Am&eacute;rica Centenario 2016?",
-        "correct_answer": "Chile",
-        "answers": [
-          "Argentina",
-          "Chile",
-          "Brazil",
-          "Colombia"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Sports",
-        "question": "What is the oldest team in the NFL?",
-        "correct_answer": "Arizona Cardinals",
-        "answers": [
-          "Chicago Bears",
-          "Green Bay Packers",
-          "New York Giants",
-          "Arizona Cardinals"
+        "Helium",
+        "Carbon",
+        "Hydrogen"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science",
+      "question_number":"4",
+      "question": "What is the molecular formula of the active component of chili peppers(Capsaicin)?",
+      "correct_answer": "C18H27NO3",
+      "answers": [
+        "C21H23NO3",
+        "C18H27NO3",
+        "C6H4Cl2",
+        "C13H25NO4"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science",
+      "question_number":"5",
+      "question": "What is the chemical formula for ammonia?",
+      "correct_answer": "NH3",
+      "answers": [
+        "CO2",
+        "NO3",
+        "NH3",
+        "CH4"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science",
+      "question_number":"1",
+      "question": "Which is the chemical name of H2O?",
+      "correct_answer": "Dihydrogen Monoxide",
+      "answers": [
+        "Ammonium chloride",
+        "Dihydrogen Monoxide",
+        "Anhydrous Sodium Carbonate",
+        "Manganese dioxide"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science",
+      "question_number":"2",
+      "question": "Burning which of these metals will produce a bright white flame?",
+      "correct_answer": "Magnesium",
+      "answers": [
+        "Copper",
+        "Magnesium",
+        "Lithium",
+        "Lead"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science",
+      "question_number":"3",
+      "question": "What is &quot;Stenoma&quot;?",
+      "correct_answer": "A genus of moths",
+      "answers": [
+        "A combat stimulant from WW2",
+        "A type of seasoning",
+        "A port city in the carribean",
+        "A genus of moths"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science",
+      "question_number":"4",
+      "question": "Which of the following liquids is least viscous? Assume temperature is 25&deg;C.",
+      "correct_answer": "Acetone",
+      "answers": [
+          "Acetone",
+        "Water",
+        "Mercury",
+        "Benzene"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science",
+      "question_number":"5",
+      "question": "The Western Lowland Gorilla is scientifically know as?",
+      "correct_answer": "Gorilla Gorilla Gorilla",
+      "answers": [
+        "Gorilla Gorilla Diehli",
+        "Gorilla Gorilla Beringei",
+        "Gorilla Beringei Graueri",
+        "Gorilla Beringei Beringei"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Sports",
+      "question_number":"1",
+      "question": "How many points did LeBron James score in his first NBA game?",
+      "correct_answer": "25",
+      "answers": [
+        "19",
+        "25",
+        "69",
+        "41"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Sports",
+      "question_number":"2",
+      "question": "What is the name of Manchester United's home stadium?",
+      "correct_answer": "Old Trafford",
+      "answers": [
+          "Old Trafford",
+        "Anfield",
+        "City of Manchester Stadium",
+        "St James Park"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Sports",
+      "question_number":"3",
+      "question": "When was the first official international game played?",
+      "correct_answer": "1872",
+      "answers": [
+        "1880",
+        "1863",
+        "1865",
+        "1872"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Sports",
+      "question_number":"4",
+      "question": "In bowling, what is the term used for getting three consecutive strikes?",
+      "correct_answer": "Turkey",
+      "answers": [
+        "Flamingo",
+        "Birdie",
+        "Turkey",
+        "Eagle"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Sports",
+      "question_number":"5",
+      "question": "In golf, what name is given to a hole score of two under par?",
+      "correct_answer": "Eagle",
+      "answers": [
+        "Birdie",
+        "Eagle",
+        "Bogey",
+        "Albatross"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question_number":"1",
+      "question": "At which bridge does the annual Oxford and Cambridge boat race start?",
+      "correct_answer": "Putney",
+      "answers": [
+          "Putney",
+        "Hammersmith",
+        "Vauxhall ",
+        "Battersea"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question_number":"2",
+      "question": "What country hosted the 2014 Winter Olympics?",
+      "correct_answer": "Russia",
+      "answers": [
+        "Canada",
+        "United States",
+        "Germany",
+        "Russia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question_number":"3",
+      "question": "Which soccer team won the Copa Am&eacute;rica Centenario 2016?",
+      "correct_answer": "Chile",
+      "answers": [
+        "Argentina",
+        "Chile",
+        "Brazil",
+        "Colombia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question_number":"4",
+      "question": "What is the oldest team in the NFL?",
+      "correct_answer": "Arizona Cardinals",
+      "answers": [
+        "Chicago Bears",
+        "Green Bay Packers",
+        "New York Giants",
+        "Arizona Cardinals"
 
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Sports",
-        "question": "What is the oldest team in Major League Baseball?",
-        "correct_answer": "Atlanta Braves",
-        "answers": [
-          "Chicago Cubs",
-          "Atlanta Braves",
-          "Cincinnati Reds",
-          "St. Louis Cardinals"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Sports",
-        "question": "The AHL affiliate team of the Boston Bruins is named what?",
-        "correct_answer": "Providence Bruins",
-        "answers": [
-          "New Haven Bruins",
-          "Cambridge Bruins",
-          "Providence Bruins",
-          "Hartford Bruins"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Sports",
-        "question": "Which English football team is nicknamed &#039;The Tigers&#039;?",
-        "correct_answer": "Hull City",
-        "answers": [
-          "Hull City",
-          "Cardiff City",
-          "Bristol City",
-          "Manchester City"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Sports",
-        "question": "In Canadian football, scoring a rouge is worth how many points?",
-        "correct_answer": "1",
-        "answers": [
-          "2",
-          "3",
-          "4",
-          "1"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Sports",
-        "question": "Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
-        "correct_answer": "Pelle",
-        "answers": [
-          "Insigne",
-          "Pelle",
-          "Barzagli",
-          "Giaccherini"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Sports",
-        "question": "Where was the Games of the XXII Olympiad held?",
-        "correct_answer": "Moscow",
-        "answers": [
-          "Barcelona",
-          "Tokyo",
-          "Los Angeles",
-          "Moscow"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Technology",
-        "question": "How many kilobytes in one gigabyte (in decimal)?",
-        "correct_answer": "1000000",
-        "answers": [
-            "1000000",
-          "1024",
-          "1000",
-          "1048576"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Technology",
-        "question": "How long is an IPv6 address?",
-        "correct_answer": "128 bits",
-        "answers": [
-          "32 bits",
-          "64 bits",
-          "128 bits",
-          "128 bytes"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Technology",
-        "question": "What is the domain name for the country Tuvalu?",
-        "correct_answer": ".tv",
-        "answers": [
-          ".tu",
-          ".tt",
-          ".tl",
-          ".tv"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Technology",
-        "question": "What does GHz stand for?",
-        "correct_answer": "Gigahertz",
-        "answers": [
-          "Gigahotz",
-          "Gigahertz",
-          "Gigahetz",
-          "Gigahatz"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "Technology",
-        "question": "What is the code name for the mobile operating system Android 7.0?",
-        "correct_answer": "Nougat",
-        "answers": [
-            "Nougat",
-          "Ice Cream Sandwich",
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question_number":"5",
+      "question": "What is the oldest team in Major League Baseball?",
+      "correct_answer": "Atlanta Braves",
+      "answers": [
+        "Chicago Cubs",
+        "Atlanta Braves",
+        "Cincinnati Reds",
+        "St. Louis Cardinals"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question_number":"1",
+      "question": "The AHL affiliate team of the Boston Bruins is named what?",
+      "correct_answer": "Providence Bruins",
+      "answers": [
+        "New Haven Bruins",
+        "Cambridge Bruins",
+        "Providence Bruins",
+        "Hartford Bruins"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question_number":"2",
+      "question": "Which English football team is nicknamed The Tigers&#039;?",
+      "correct_answer": "Hull City",
+      "answers": [
+        "Hull City",
+        "Cardiff City",
+        "Bristol City",
+        "Manchester City"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question_number":"3",
+      "question": "In Canadian football, scoring a rouge is worth how many points?",
+      "correct_answer": "1",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question_number":"4",
+      "question": "Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
+      "correct_answer": "Pelle",
+      "answers": [
+        "Insigne",
+        "Pelle",
+        "Barzagli",
+        "Giaccherini"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question_number":"5",
+      "question": "Where was the Games of the XXII Olympiad held?",
+      "correct_answer": "Moscow",
+      "answers": [
+        "Barcelona",
+        "Tokyo",
+        "Los Angeles",
+        "Moscow"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Technology",
+      "question_number":"1",
+      "question": "How many kilobytes in one gigabyte (in decimal)?",
+      "correct_answer": "1000000",
+      "answers": [
+          "1000000",
+        "1024",
+        "1000",
+        "1048576"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Technology",
+      "question_number":"2",
+      "question": "How long is an IPv6 address?",
+      "correct_answer": "128 bits",
+      "answers": [
+        "32 bits",
+        "64 bits",
+        "128 bits",
+        "128 bytes"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Technology",
+      "question_number":"3",
+      "question": "What is the domain name for the country Tuvalu?",
+      "correct_answer": ".tv",
+      "answers": [
+        ".tu",
+        ".tt",
+        ".tl",
+        ".tv"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Technology",
+      "question_number":"4",
+      "question": "What does GHz stand for?",
+      "correct_answer": "Gigahertz",
+      "answers": [
+        "Gigahotz",
+        "Gigahertz",
+        "Gigahetz",
+        "Gigahatz"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Technology",
+      "question_number":"5",
+      "question": "What is the code name for the mobile operating system Android 7.0?",
+      "correct_answer": "Nougat",
+      "answers": [
+          "Nougat",
+        "Ice Cream Sandwich",
+        "Jelly Bean",
+        "Marshmallow"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Technology",
+      "question_number":"1",
+      "question": ".at is the top-level domain for what country?",
+      "correct_answer": "Austria",
+      "answers": [
+        "Argentina",
+        "Australia",
+        "Austria",
+        "Angola"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Technology",
+      "question_number":"2",
+      "question": "What does the term GPU stand for?",
+      "correct_answer": "Graphics Processing Unit",
+      "answers": [
+          "Graphics Processing Unit",
+        "Gaming Processor Unit",
+        "Graphite Producing Unit",
+        "Graphical Proprietary Unit"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Technology",
+      "question_number":"3",
+      "question": "What was the name given to Android 4.3?",
+      "correct_answer": "Jelly Bean",
+      "answers": [
           "Jelly Bean",
-          "Marshmallow"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Technology",
-        "question": ".at is the top-level domain for what country?",
-        "correct_answer": "Austria",
-        "answers": [
-          "Argentina",
-          "Australia",
-          "Austria",
-          "Angola"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Technology",
-        "question": "What does the term GPU stand for?",
-        "correct_answer": "Graphics Processing Unit",
-        "answers": [
-            "Graphics Processing Unit",
-          "Gaming Processor Unit",
-          "Graphite Producing Unit",
-          "Graphical Proprietary Unit"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Technology",
-        "question": "What was the name given to Android 4.3?",
-        "correct_answer": "Jelly Bean",
-        "answers": [
-            "Jelly Bean",
-          "Lollipop",
-          "Nutella",
-          "Froyo"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Technology",
-        "question": "In programming, what do you call functions with the same name but different implementations?",
-        "correct_answer": "Overloading",
-        "answers": [
-          "Overriding",
-          "Abstracting",
-          "Overloading",
-          "Inheriting"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "medium",
-        "category": "Technology",
-        "question": "Unix Time is defined as the number of seconds that have elapsed since when?",
-        "correct_answer": "Midnight, January 1, 1970",
-        "answers": [
-          "Midnight, July 4, 1976",
-          "Midnight on the creator of Unix&#039;s birthday",
-          "Midnight, July 4, 1980",
-          "Midnight, January 1, 1970"
-        ]
-      }, {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Technology",
-        "question": "Which data structure does FILO apply to?",
-        "correct_answer": "Stack",
-        "answers": [
-          "Queue",
-          "Stack",
-          "Heap",
-          "Tree"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Technology",
-        "question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
-        "correct_answer": "Quantum Teleportation",
-        "answers": [
-          "Super Dense Coding",
-          "Quantum Entanglement",
-          "Quantum Programming",
-          "Quantum Teleportation"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Technology",
-        "question": "Which of these Cherry MX mechanical keyboard switches is both tactile and clicky?",
-        "correct_answer": "Cherry MX Blue",
-        "answers": [
-          "Cherry MX Black",
-          "Cherry MX Red",
-          "Cherry MX Blue",
-          "Cherry MX Brown"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Technology",
-        "question": "Who is the founder of Palantir?",
-        "correct_answer": "Peter Thiel",
-        "answers": [
-          "Mark Zuckerberg",
-          "Marc Benioff",
-          "Jack Dorsey",
-          "Peter Thiel"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "hard",
-        "category": "Technology",
-        "question": "What internet protocol was documented in RFC 1459?",
-        "correct_answer": "IRC",
-        "answers": [
-            "IRC",
-          "HTTP",
-          "HTTPS",
-          "FTP"
-        ]
-      }
+        "Lollipop",
+        "Nutella",
+        "Froyo"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Technology",
+      "question_number":"4",
+      "question": "In programming, what do you call functions with the same name but different implementations?",
+      "correct_answer": "Overloading",
+      "answers": [
+        "Overriding",
+        "Abstracting",
+        "Overloading",
+        "Inheriting"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Technology",
+      "question_number":"5",
+      "question": "Unix Time is defined as the number of seconds that have elapsed since when?",
+      "correct_answer": "Midnight, January 1, 1970",
+      "answers": [
+        "Midnight, July 4, 1976",
+        "Midnight on the creator of Unix&#039;s birthday",
+        "Midnight, July 4, 1980",
+        "Midnight, January 1, 1970"
+      ]
+    }, {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Technology",
+      "question_number":"1",
+      "question": "Which data structure does FILO apply to?",
+      "correct_answer": "Stack",
+      "answers": [
+        "Queue",
+        "Stack",
+        "Heap",
+        "Tree"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Technology",
+      "question_number":"2",
+      "question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+      "correct_answer": "Quantum Teleportation",
+      "answers": [
+        "Super Dense Coding",
+        "Quantum Entanglement",
+        "Quantum Programming",
+        "Quantum Teleportation"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Technology",
+      "question_number":"3",
+      "question": "Which of these Cherry MX mechanical keyboard switches is both tactile and clicky?",
+      "correct_answer": "Cherry MX Blue",
+      "answers": [
+        "Cherry MX Black",
+        "Cherry MX Red",
+        "Cherry MX Blue",
+        "Cherry MX Brown"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Technology",
+      "question_number":"4",
+      "question": "Who is the founder of Palantir?",
+      "correct_answer": "Peter Thiel",
+      "answers": [
+        "Mark Zuckerberg",
+        "Marc Benioff",
+        "Jack Dorsey",
+        "Peter Thiel"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Technology",
+      "question_number":"5",
+      "question": "What internet protocol was documented in RFC 1459?",
+      "correct_answer": "IRC",
+      "answers": [
+          "IRC",
+        "HTTP",
+        "HTTPS",
+        "FTP"
+      ]
+    }
 
-    ]
-    
-  }
+  ]
+  
+}
