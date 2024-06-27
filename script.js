@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', (event) => {
     // Get the modal
     const modal = document.getElementById("myModal");
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             modal.style.display = "block";
         }
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";

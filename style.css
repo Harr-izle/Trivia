@@ -76,6 +76,7 @@ body, html {
     justify-content: center;
     cursor: pointer;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
 }
 .card:hover {
     box-shadow: 0 0 25px rgba(50, 50, 255, 0.7);
