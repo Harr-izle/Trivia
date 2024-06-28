@@ -1,45 +1,71 @@
-// game.js
-
 let questions;
 let currentCategory;
 let currentDifficulty = 'easy';
 let currentQuestionIndex = 0;
 let score = 0;
 let answeredQuestions = new Set();
+let gameState = {}; // To store the state for each category and difficulty
+let timer;
+let timeLeft;
 
-const correctSound = new Audio('path/to/correct-sound.mp3');
-const wrongSound = new Audio('path/to/wrong-sound.mp3');
-const congratsSound = new Audio('path/to/congrats-sound.mp3');
+const correctSound = new Audio('./audio/correct-sound.wav');
+const wrongSound = new Audio('./audio/wrong-sound.mp3');
+const congratsSound = new Audio('./audio/congrats-sound.mp3');
+const tickSound = new Audio('./audio/tick-sound.mp3');
+const timeUpSound = new Audio('./audio/time-up-sound.mp3');
 
 async function fetchQuestions() {
-    const response = await fetch('./questions.json');
-    questions = await response.json();
-    console.log('Fetched questions:', questions);
+    try {
+        const response = await fetch('./questions.json');
+        questions = await response.json();
+        console.log('Fetched questions:', questions);
+    } catch (error) {
+        console.error('Failed to fetch questions:', error);
+        alert('Failed to fetch questions. Please try again later.');
+    }
 }
 
 function loadQuestions(category, difficulty) {
     currentCategory = category;
     currentDifficulty = difficulty;
-    currentQuestionIndex = 0;
-    score = 0;
-    answeredQuestions.clear();
-
-    let filteredQuestions;
-
-    if (Array.isArray(questions)) {
-        filteredQuestions = questions.filter(q => 
-            q.category === category && q.difficulty === difficulty
-        );
-    } else if (typeof questions === 'object') {
-        filteredQuestions = Object.values(questions)
-            .flat()
-            .filter(q => q.category === category && q.difficulty === difficulty);
+    const stateKey = `${category}-${difficulty}`;
+    
+    if (gameState[stateKey]) {
+        // Restore the previous state
+        currentQuestionSet = gameState[stateKey].questions;
+        currentQuestionIndex = gameState[stateKey].currentIndex;
+        score = gameState[stateKey].score;
+        answeredQuestions = new Set(gameState[stateKey].answered);
     } else {
-        console.error('Unexpected questions data structure');
-        return [];
+        // Create a new state
+        currentQuestionIndex = 0;
+        score = 0;
+        answeredQuestions.clear();
+
+        let filteredQuestions;
+        if (Array.isArray(questions)) {
+            filteredQuestions = questions.filter(q =>
+                q.category === category && q.difficulty === difficulty
+            );
+        } else if (typeof questions === 'object') {
+            filteredQuestions = Object.values(questions)
+                .flat()
+                .filter(q => q.category === category && q.difficulty === difficulty);
+        } else {
+            console.error('Unexpected questions data structure');
+            return [];
+        }
+
+        currentQuestionSet = filteredQuestions.slice(0, 5);
+        gameState[stateKey] = {
+            questions: currentQuestionSet,
+            currentIndex: 0,
+            score: 0,
+            answered: []
+        };
     }
 
-    return filteredQuestions.slice(0, 5);
+    return currentQuestionSet;
 }
 
 function displayQuestion(question, index) {
@@ -64,6 +90,8 @@ function displayQuestion(question, index) {
         if (question.userAnswer !== correctIndex) {
             optionsElement.children[question.userAnswer].classList.add('incorrect');
         }
+    } else {
+        startTimer();
     }
 
     updateCircles();
@@ -72,6 +100,7 @@ function displayQuestion(question, index) {
 function checkAnswer(event) {
     if (answeredQuestions.has(currentQuestionIndex)) return;
 
+    clearInterval(timer);
     const selectedAnswer = event.target;
     if (selectedAnswer.type !== 'radio') return;
 
@@ -95,6 +124,7 @@ function checkAnswer(event) {
     }
 
     updateCircles();
+    updateGameState();
 
     if (answeredQuestions.size === 5) {
         endGame();
@@ -102,23 +132,46 @@ function checkAnswer(event) {
 }
 
 function endGame() {
-    const triviaElement = document.querySelector('.trivia');
-    triviaElement.innerHTML += `
-        <div class="game-over">
-            <h2>Game Over</h2>
-            <p>You scored ${score} out of 5</p>
-        </div>
-    `;
-
-    if (score >= 4) {
-        congratsSound.play();
+    if (answeredQuestions.size === 5) {
+        const triviaElement = document.querySelector('.trivia');
         triviaElement.innerHTML += `
-            <div class="congratulations">
-                <h3>Congratulations!</h3>
-                <p>You did great!</p>
+            <div class="game-over">
+                <h2 style="color:red">Game Over</h2>
+                <p>You scored ${score} out of 5</p>
             </div>
         `;
+
+        if (score >= 4) {
+            congratsSound.play();
+            triviaElement.innerHTML += `
+                <div class="congratulations">
+                    <h3>Congratulations!</h3>
+                    <p>You did great!</p>
+                </div>
+            `;
+        }
     }
+}
+
+function clearGameOverMessage() {
+    const triviaElement = document.querySelector('.trivia');
+    triviaElement.innerHTML = ''; // Clear all content
+    triviaElement.innerHTML = `
+        <div id="questions">
+            <div class="timer">Time left: 10s</div>
+            <div class="circle-container">
+                <a href="#" class="circle">1</a>
+                <a href="#" class="circle">2</a>
+                <a href="#" class="circle">3</a>
+                <a href="#" class="circle">4</a>
+                <a href="#" class="circle">5</a>
+            </div>
+            <div class="question"></div>
+            <div class="options"></div>
+        </div>
+    `;
+    document.querySelector('.options').addEventListener('change', checkAnswer);
+    attachCircleEventListeners();
 }
 
 function updateCircles() {
@@ -138,8 +191,77 @@ function getCurrentQuestion() {
     return getCurrentQuestionSet()[currentQuestionIndex];
 }
 
+let currentQuestionSet = [];
+
 function getCurrentQuestionSet() {
-    return loadQuestions(currentCategory, currentDifficulty);
+    return currentQuestionSet;
+}
+
+function attachCircleEventListeners() {
+    const circles = document.querySelectorAll('.circle');
+    circles.forEach((circle, index) => {
+        circle.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (index < currentQuestionSet.length) {
+                clearInterval(timer);
+                currentQuestionIndex = index;
+                displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+            }
+        });
+    });
+}
+
+function updateGameState() {
+    const stateKey = `${currentCategory}-${currentDifficulty}`;
+    gameState[stateKey] = {
+        questions: currentQuestionSet,
+        currentIndex: currentQuestionIndex,
+        score: score,
+        answered: Array.from(answeredQuestions)
+    };
+}
+
+function startTimer() {
+    timeLeft = 10;
+    updateTimerDisplay();
+    timer = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+        if (timeLeft > 0) {
+            tickSound.play();
+        } else {
+            clearInterval(timer);
+            timeUpSound.play();
+            handleTimeUp();
+        }
+    }, 1000);
+}
+
+function updateTimerDisplay() {
+    const timerElement = document.querySelector('.timer');
+    if (timerElement) {
+        timerElement.textContent = `Time left: ${timeLeft}s`;
+        timerElement.style.color = "white";
+    } else {
+        console.error('Timer element not found.');
+    }
+}
+
+function handleTimeUp() {
+    const currentQuestion = getCurrentQuestion();
+    answeredQuestions.add(currentQuestionIndex);
+    updateCircles();
+    updateGameState();
+
+    const labels = document.querySelectorAll('.options label');
+    labels.forEach(label => label.querySelector('input').disabled = true);
+
+    const correctIndex = currentQuestion.answers.indexOf(currentQuestion.correct_answer);
+    labels[correctIndex].classList.add('correct');
+
+    if (answeredQuestions.size === 5) {
+        endGame();
+    }
 }
 
 async function initGame() {
@@ -153,9 +275,10 @@ async function initGame() {
         categoryCards.forEach(card => {
             card.addEventListener('click', () => {
                 const category = card.querySelector('h1').textContent;
-                const loadedQuestions = loadQuestions(category, currentDifficulty);
-                if (loadedQuestions.length > 0) {
-                    displayQuestion(loadedQuestions[0], 0);
+                currentQuestionSet = loadQuestions(category, currentDifficulty);
+                if (currentQuestionSet.length > 0) {
+                    clearGameOverMessage();
+                    displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
                     modal.style.display = "block";
                 } else {
                     alert('No questions available for this category and difficulty.');
@@ -165,21 +288,24 @@ async function initGame() {
 
         span.onclick = function() {
             modal.style.display = "none";
-        }
+            clearGameOverMessage();
+        };
 
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+                clearGameOverMessage();
             }
-        }
+        };
 
         const difficultyButtons = document.querySelectorAll('.difficulty-btn');
-        difficultyButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                currentDifficulty = button.textContent.toLowerCase();
-                const loadedQuestions = loadQuestions(currentCategory, currentDifficulty);
-                if (loadedQuestions.length > 0) {
-                    displayQuestion(loadedQuestions[0], 0);
+        difficultyButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                currentDifficulty = btn.textContent.toLowerCase();
+                currentQuestionSet = loadQuestions(currentCategory, currentDifficulty);
+                if (currentQuestionSet.length > 0) {
+                    clearGameOverMessage();
+                    displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
                 } else {
                     alert('No questions available for this category and difficulty.');
                 }
@@ -187,16 +313,7 @@ async function initGame() {
         });
 
         document.querySelector('.options').addEventListener('change', checkAnswer);
-
-        const circles = document.querySelectorAll('.circle');
-        circles.forEach((circle, index) => {
-            circle.addEventListener('click', () => {
-                if (index < getCurrentQuestionSet().length) {
-                    currentQuestionIndex = index;
-                    displayQuestion(getCurrentQuestion(), currentQuestionIndex);
-                }
-            });
-        });
+        attachCircleEventListeners();
 
     } catch (error) {
         console.error('Error initializing game:', error);
