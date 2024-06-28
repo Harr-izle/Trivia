@@ -285,7 +285,7 @@ body, html {
     position: absolute;
     top: 15%;
     line-height: 0.2;
-    right: 5px;
+    left: 5px;
     font-size: 15px;
 }
 

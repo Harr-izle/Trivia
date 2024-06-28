@@ -145,7 +145,7 @@ function endGame() {
             congratsSound.play();
             triviaElement.innerHTML += `
                 <div class="congratulations">
-                    <h3>Congratulations!</h3>
+                    <h5>Congratulations!</h5>
                     <p>You did great!</p>
                 </div>
             `;
@@ -259,8 +259,28 @@ function handleTimeUp() {
     const correctIndex = currentQuestion.answers.indexOf(currentQuestion.correct_answer);
     labels[correctIndex].classList.add('correct');
 
+    // Check if all questions have been answered
     if (answeredQuestions.size === 5) {
         endGame();
+    } else {
+        // Display score and game over message
+        const triviaElement = document.querySelector('.trivia');
+        triviaElement.innerHTML += `
+            <div class="game-over">
+                <h2 style="color:red">Time's Up!</h2>
+                <p>You scored ${score} out of 5</p>
+            </div>
+        `;
+
+        if (score >= 4) {
+            congratsSound.play();
+            triviaElement.innerHTML += `
+                <div class="congratulations">
+                    <h3>Congratulations!</h3>
+                    <p>You did great!</p>
+                </div>
+            `;
+        }
     }
 }
 
