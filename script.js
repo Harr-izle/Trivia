@@ -158,7 +158,7 @@ function clearGameOverMessage() {
     triviaElement.innerHTML = ''; // Clear all content
     triviaElement.innerHTML = `
         <div id="questions">
-            <div class="timer">Time left: 10s</div>
+            <div class="timer">Time left: 30s</div>
             <div class="circle-container">
                 <a href="#" class="circle">1</a>
                 <a href="#" class="circle">2</a>
@@ -222,7 +222,7 @@ function updateGameState() {
 }
 
 function startTimer() {
-    timeLeft = 10;
+    timeLeft = 30;
     updateTimerDisplay();
     timer = setInterval(() => {
         timeLeft--;
@@ -263,25 +263,20 @@ function handleTimeUp() {
     if (answeredQuestions.size === 5) {
         endGame();
     } else {
-        // Display score and game over message
-        const triviaElement = document.querySelector('.trivia');
-        triviaElement.innerHTML += `
-            <div class="game-over">
-                <h2 style="color:red">Time's Up!</h2>
-                <p>You scored ${score} out of 5</p>
-            </div>
-        `;
-
-        if (score >= 4) {
-            congratsSound.play();
-            triviaElement.innerHTML += `
-                <div class="congratulations">
-                    <h3>Congratulations!</h3>
-                    <p>You did great!</p>
-                </div>
-            `;
+        // Move to the next question
+        currentQuestionIndex++;
+        if (currentQuestionIndex < currentQuestionSet.length) {
+            displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+        } else {
+            endGame();
         }
     }
+}
+
+function stopTimerAndSounds() {
+    clearInterval(timer);
+    tickSound.pause();
+    tickSound.currentTime = 0;
 }
 
 async function initGame() {
@@ -308,12 +303,14 @@ async function initGame() {
 
         span.onclick = function() {
             modal.style.display = "none";
+            stopTimerAndSounds();
             clearGameOverMessage();
         };
 
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+                stopTimerAndSounds();
                 clearGameOverMessage();
             }
         };
