@@ -233,7 +233,18 @@ body, html {
 .circle:hover {
     opacity: 0.8;
 }
-
+#startButton{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 130px;
+    color: white;
+    background-color: green;
+    border: none;
+    
+}
 .options label {
     display: block;
     margin-bottom: 10px;

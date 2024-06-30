@@ -7,6 +7,7 @@ let answeredQuestions = new Set();
 let gameState = {}; // To store the state for each category and difficulty
 let timer;
 let timeLeft;
+let gameStarted = false;
 
 const correctSound = new Audio('./audio/correct-sound.wav');
 const wrongSound = new Audio('./audio/wrong-sound.mp3');
@@ -19,9 +20,10 @@ async function fetchQuestions() {
         const response = await fetch('./questions.json');
         questions = await response.json();
         console.log('Fetched questions:', questions);
+        return true; // Successfully fetched questions
     } catch (error) {
         console.error('Failed to fetch questions:', error);
-        alert('Failed to fetch questions. Please try again later.');
+        return false; // Failed to fetch questions
     }
 }
 
@@ -65,12 +67,19 @@ function loadQuestions(category, difficulty) {
         };
     }
 
+    // Check if all questions have been answered
+    if (answeredQuestions.size === currentQuestionSet.length) {
+        endGame();
+    }
+
     return currentQuestionSet;
 }
 
 function displayQuestion(question, index) {
     const questionElement = document.querySelector('.question');
     const optionsElement = document.querySelector('.options');
+    const timerElement = document.querySelector('.timer');
+    const startButton = document.querySelector('#startButton');
 
     questionElement.textContent = `Question ${index + 1}: ${question.question}`;
     optionsElement.innerHTML = '';
@@ -78,7 +87,7 @@ function displayQuestion(question, index) {
     question.answers.forEach((answer, i) => {
         const label = document.createElement('label');
         label.innerHTML = `
-            <input type="radio" name="answer" value="${i}" ${answeredQuestions.has(index) ? 'disabled' : ''}>
+            <input type="radio" name="answer" value="${i}" ${answeredQuestions.has(index) || !gameStarted ? 'disabled' : ''}>
             <span>${answer}</span>
         `;
         optionsElement.appendChild(label);
@@ -90,15 +99,18 @@ function displayQuestion(question, index) {
         if (question.userAnswer !== correctIndex) {
             optionsElement.children[question.userAnswer].classList.add('incorrect');
         }
+        timerElement.style.display = 'none'; // Hide timer for answered questions
+        startButton.style.display = 'none'; // Always hide start button for answered questions
     } else {
-        startTimer();
+        timerElement.style.display = gameStarted ? 'block' : 'none'; // Show timer if game has started
+        startButton.style.display = gameStarted ? 'none' : 'block'; // Show start button only if game hasn't started
     }
 
     updateCircles();
 }
 
 function checkAnswer(event) {
-    if (answeredQuestions.has(currentQuestionIndex)) return;
+    if (answeredQuestions.has(currentQuestionIndex) || !gameStarted) return;
 
     clearInterval(timer);
     const selectedAnswer = event.target;
@@ -128,29 +140,94 @@ function checkAnswer(event) {
 
     if (answeredQuestions.size === 5) {
         endGame();
+    } else {
+        // Move to the next question
+        currentQuestionIndex++;
+        if (currentQuestionIndex < currentQuestionSet.length) {
+            displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+            if (gameStarted) {
+                startTimer(); // Start the timer for the next question
+            }
+        }
     }
 }
 
 function endGame() {
     if (answeredQuestions.size === 5) {
-        const triviaElement = document.querySelector('.trivia');
-        triviaElement.innerHTML += `
-            <div class="game-over">
+        let modalContent = `
+            <div class="game-over-modal-content">
+                <span class="close">&times;</span>
                 <h2 style="color:red">Game Over</h2>
                 <p>You scored ${score} out of 5</p>
-            </div>
         `;
 
         if (score >= 4) {
             congratsSound.play();
-            triviaElement.innerHTML += `
+            modalContent += `
                 <div class="congratulations">
                     <h5>Congratulations!</h5>
                     <p>You did great!</p>
                 </div>
             `;
         }
+
+        modalContent += `
+            </div>
+        `;
+
+        const gameOverModal = document.createElement('div');
+        gameOverModal.id = 'gameOverModal';
+        gameOverModal.style.cssText = `
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        `;
+        gameOverModal.innerHTML = modalContent;
+
+        const modalContentStyle = `
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        `;
+
+        gameOverModal.querySelector('.game-over-modal-content').style.cssText = modalContentStyle;
+
+        const closeButton = gameOverModal.querySelector('.close');
+        closeButton.style.cssText = `
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        `;
+
+        document.body.appendChild(gameOverModal);
+
+        closeButton.onclick = function() {
+            document.body.removeChild(gameOverModal);
+        };
+
+        gameOverModal.onclick = function(event) {
+            if (event.target === gameOverModal) {
+                document.body.removeChild(gameOverModal);
+            }
+        };
     }
+    gameStarted = false;
 }
 
 function clearGameOverMessage() {
@@ -158,7 +235,8 @@ function clearGameOverMessage() {
     triviaElement.innerHTML = ''; // Clear all content
     triviaElement.innerHTML = `
         <div id="questions">
-            <div class="timer">Time left: 30s</div>
+            <div class="timer" style="display: none;">Time left: 30s</div>
+            <button id="startButton" style="display: block;">Start</button>
             <div class="circle-container">
                 <a href="#" class="circle">1</a>
                 <a href="#" class="circle">2</a>
@@ -172,6 +250,7 @@ function clearGameOverMessage() {
     `;
     document.querySelector('.options').addEventListener('change', checkAnswer);
     attachCircleEventListeners();
+    attachStartButtonListener();
 }
 
 function updateCircles() {
@@ -206,6 +285,9 @@ function attachCircleEventListeners() {
                 clearInterval(timer);
                 currentQuestionIndex = index;
                 displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+                if (gameStarted && !answeredQuestions.has(index)) {
+                    startTimer(); // Start the timer for unanswered questions
+                }
             }
         });
     });
@@ -267,6 +349,9 @@ function handleTimeUp() {
         currentQuestionIndex++;
         if (currentQuestionIndex < currentQuestionSet.length) {
             displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+            if (gameStarted) {
+                startTimer(); // Start the timer for the next question
+            }
         } else {
             endGame();
         }
@@ -279,63 +364,99 @@ function stopTimerAndSounds() {
     tickSound.currentTime = 0;
 }
 
+function updateDifficultyButtonStyles() {
+    const difficultyButtons = document.querySelectorAll('.difficulty-btn');
+    difficultyButtons.forEach(btn => {
+        if (btn.textContent.toLowerCase() === currentDifficulty) {
+            btn.style.backgroundColor = 'green';
+            btn.style.color = 'white';
+        } else {
+            btn.style.backgroundColor = ''; // Reset to default
+            btn.style.color = ''; // Reset to default
+        }
+    });
+}
+
+function attachStartButtonListener() {
+    const startButton = document.querySelector('#startButton');
+    startButton.addEventListener('click', () => {
+        if (!gameStarted) {
+            gameStarted = true;
+            startButton.style.display = 'none';
+            const timerElement = document.querySelector('.timer');
+            timerElement.style.display = 'block';
+            startTimer();
+            const optionInputs = document.querySelectorAll('.options input');
+            optionInputs.forEach(input => input.disabled = false);
+        }
+    });
+}
+
 async function initGame() {
-    try {
-        await fetchQuestions();
+    const questionsLoaded = await fetchQuestions();
+    
+    if (!questionsLoaded) {
+        alert('There was an error loading the game. Please try again later.');
+        return; // Exit the function if questions couldn't be loaded
+    }
 
-        const modal = document.getElementById("myModal");
-        const span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const span = document.getElementsByClassName("close")[0];
 
-        const categoryCards = document.querySelectorAll('.card');
-        categoryCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const category = card.querySelector('h1').textContent;
-                currentQuestionSet = loadQuestions(category, currentDifficulty);
-                if (currentQuestionSet.length > 0) {
-                    clearGameOverMessage();
-                    displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
-                    modal.style.display = "block";
-                } else {
-                    alert('No questions available for this category and difficulty.');
-                }
-            });
+    const categoryCards = document.querySelectorAll('.card');
+    categoryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const category = card.querySelector('h1').textContent;
+            currentQuestionSet = loadQuestions(category, currentDifficulty);
+            if (currentQuestionSet.length > 0) {
+                clearGameOverMessage();
+                displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+                modal.style.display = "block";
+                gameStarted = false; // Reset game state when opening modal
+            } else {
+                alert('No questions available for this category and difficulty.');
+            }
         });
+    });
 
-        span.onclick = function() {
+    span.onclick = function() {
+        modal.style.display = "none";
+        stopTimerAndSounds();
+        location.reload(); // Reload the page when the main modal is closed
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
             stopTimerAndSounds();
-            clearGameOverMessage();
-        };
+            location.reload(); // Reload the page when the main modal is closed
+        }
+    };
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-                stopTimerAndSounds();
-                clearGameOverMessage();
-            }
-        };
-
-        const difficultyButtons = document.querySelectorAll('.difficulty-btn');
-        difficultyButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                currentDifficulty = btn.textContent.toLowerCase();
+    const difficultyButtons = document.querySelectorAll('.difficulty-btn');
+    difficultyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            currentDifficulty = btn.textContent.toLowerCase();
+            updateDifficultyButtonStyles();
+            if (currentCategory) {
                 currentQuestionSet = loadQuestions(currentCategory, currentDifficulty);
                 if (currentQuestionSet.length > 0) {
                     clearGameOverMessage();
                     displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+                    gameStarted = false;
                 } else {
                     alert('No questions available for this category and difficulty.');
                 }
-            });
+            }
         });
+    });
 
-        document.querySelector('.options').addEventListener('change', checkAnswer);
-        attachCircleEventListeners();
+    document.querySelector('.options').addEventListener('change', checkAnswer);
+    attachCircleEventListeners();
+    attachStartButtonListener();
 
-    } catch (error) {
-        console.error('Error initializing game:', error);
-        alert('There was an error loading the game. Please try again later.');
-    }
+    updateDifficultyButtonStyles();
 }
 
-initGame();
+// Wait for the DOM to be fully loaded before initializing the game
+document.addEventListener('DOMContentLoaded', initGame);
