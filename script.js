@@ -12,7 +12,6 @@ let gameStarted = false;
 const correctSound = new Audio('./audio/correct-sound.wav');
 const wrongSound = new Audio('./audio/wrong-sound.mp3');
 const congratsSound = new Audio('./audio/congrats-sound.mp3');
-const tickSound = new Audio('./audio/tick-sound.mp3');
 const timeUpSound = new Audio('./audio/time-up-sound.mp3');
 
 async function fetchQuestions() {
@@ -315,7 +314,7 @@ function startTimer() {
         timeLeft--;
         updateTimerDisplay();
         if (timeLeft > 0) {
-            tickSound.play();
+            
         } else {
             clearInterval(timer);
             timeUpSound.play();
@@ -367,7 +366,7 @@ function handleTimeUp() {
 
 function stopTimerAndSounds() {
     clearInterval(timer);
-    tickSound.pause();
+    // tickSound.pause();
     tickSound.currentTime = 0;
 }
 
