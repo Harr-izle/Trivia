@@ -84,7 +84,7 @@ function displayQuestion(question, index) {
     question.answers.forEach((answer, i) => {
         const label = document.createElement('label');
         label.innerHTML = `
-            <input type="radio" name="answer" value="${i}" ${answeredQuestions.has(index) ? 'disabled' : ''}>
+            <input type="radio" name="answer" value="${i}" ${answeredQuestions.has(index) || (!gameStarted && index === 0) ? 'disabled' : ''}>
             <span>${answer}</span>
         `;
         label.style.display = 'block';
@@ -116,8 +116,7 @@ function displayQuestion(question, index) {
 }
 
 function checkAnswer(event) {
-   
-     if (answeredQuestions.has(currentQuestionIndex) || !gameStarted) return;
+    if (answeredQuestions.has(currentQuestionIndex) || (!gameStarted && currentQuestionIndex === 0)) return;
 
     clearInterval(timer);
     const selectedAnswer = event.target;
@@ -465,4 +464,5 @@ async function initGame() {
 
     updateDifficultyButtonStyles();
 }
+
 document.addEventListener('DOMContentLoaded', initGame);
