@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 
 * {
     margin: 0;
@@ -7,6 +7,7 @@
 
 body, html {
     height: 100%;
+    font-family: "Mouse Memoirs", sans-serif;
 }
 
 /* landingpage */
@@ -158,9 +159,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
     width: 150px;
-    height: 250px;
+    height: 150px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
                 0 0 30px rgba(20, 20, 255, 0.4);
@@ -194,6 +195,13 @@ body, html {
     height: 400px;
     margin-top: 50px;  
 }
+.styled-text {
+    font-size: 20px;                
+    font-weight: bold;     
+    text-align: center;    
+    margin-top: 10px;      
+}
+
 
 .question {
     font-size: 18px;
@@ -235,7 +243,7 @@ body, html {
 }
 #startButton{
     position: absolute;
-    width: 60px;
+    width: 150px;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
@@ -243,6 +251,11 @@ body, html {
     color: white;
     background-color: green;
     border: none;
+    transition: 0.2s ease-in;
+    
+}
+#startButton:hover{
+    background-color: rgb(60, 179, 113);
     
 }
 .options label {
