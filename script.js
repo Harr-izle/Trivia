@@ -70,10 +70,6 @@ function loadQuestions(category, difficulty) {
         };
     }
 
-    if (answeredQuestions.size === currentQuestionSet.length) {
-        endGame();
-    }
-
     return currentQuestionSet;
 }
 
@@ -114,7 +110,11 @@ function displayQuestion(question, index) {
         optionsElement.appendChild(label);
     });
 
-    timerElement.style.display = 'block';
+    if (answeredQuestions.size < 5) {
+        timerElement.style.display = 'block';
+    } else {
+        timerElement.style.display = 'none';
+    }
     circleContainer.style.display = 'flex';
 
     updateCircles();
@@ -136,106 +136,117 @@ function checkAnswer(event) {
     const labels = document.querySelectorAll('.options label');
     labels.forEach(label => label.querySelector('input').disabled = true);
 
-    if (currentQuestion.answers[answerIndex] === currentQuestion.correct_answer) {
+    const correctIndex = currentQuestion.answers.indexOf(currentQuestion.correct_answer);
+
+    if (answerIndex === correctIndex) {
         correctSound.play();
-        selectedAnswer.parentElement.classList.add('correct');
+        selectedAnswer.parentElement.style.backgroundColor = 'green';
+        selectedAnswer.parentElement.style.color = 'white';
         score++;
     } else {
         wrongSound.play();
-        selectedAnswer.parentElement.classList.add('incorrect');
-        labels[currentQuestion.answers.indexOf(currentQuestion.correct_answer)].classList.add('correct');
+        selectedAnswer.parentElement.style.backgroundColor = 'red';
+        selectedAnswer.parentElement.style.color = 'white';
+        labels[correctIndex].style.backgroundColor = 'green';
+        labels[correctIndex].style.color = 'white';
     }
 
     updateCircles();
     updateGameState();
 
-    if (answeredQuestions.size === 5) {
-        endGame();
-    } else {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentQuestionSet.length) {
-            displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
-            startTimer();
+    setTimeout(() => {
+        if (answeredQuestions.size === 5) {
+            endGame();
+        } else {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuestionSet.length) {
+                displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+                startTimer();
+            }
         }
-    }
+    }, 4000);
 }
 
 function endGame() {
-    if (answeredQuestions.size === 5) {
-        let modalContent = `
-            <div class="game-over-modal-content">
-                <span class="close">&times;</span>
-                <h2 style="color:red">Game Over</h2>
-                <p>You scored ${score} out of 5</p>
-        `;
+    clearInterval(timer);
+    const timerElement = document.querySelector('.timer');
+    timerElement.style.display = 'none';
 
-        if (score >= 4) {
-            congratsSound.play();
-            modalContent += `
-                <div class="congratulations">
-                    <h5>Congratulations!</h5>
-                    <p>You did great!</p>
-                </div>
-            `;
-        }
+    let modalContent = `
+        <div class="game-over-modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color:red">Game Over</h2>
+            <p>You scored ${score} out of 5</p>
+    `;
 
+    if (score >= 4) {
+        congratsSound.play();
         modalContent += `
+            <div class="congratulations">
+                <h5>Congratulations!</h5>
+                <p>You did great!</p>
             </div>
         `;
-
-        const gameOverModal = document.createElement('div');
-        gameOverModal.id = 'gameOverModal';
-        gameOverModal.style.cssText = `
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.4);
-        `;
-        gameOverModal.innerHTML = modalContent;
-
-        const modalContentStyle = `
-            background-color: #fefefe;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 300px;
-            text-align: center;
-            border-radius: 10px;
-            position: relative;
-        `;
-
-        gameOverModal.querySelector('.game-over-modal-content').style.cssText = modalContentStyle;
-
-        const closeButton = gameOverModal.querySelector('.close');
-        closeButton.style.cssText = `
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        `;
-
-        document.body.appendChild(gameOverModal);
-
-        closeButton.onclick = function() {
-            document.body.removeChild(gameOverModal);
-        };
-
-        gameOverModal.onclick = function(event) {
-            if (event.target === gameOverModal) {
-                document.body.removeChild(gameOverModal);
-            }
-        };
     }
+
+    modalContent += `
+        </div>
+    `;
+
+    const gameOverModal = document.createElement('div');
+    gameOverModal.id = 'gameOverModal';
+    gameOverModal.style.cssText = `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+    `;
+    gameOverModal.innerHTML = modalContent;
+
+    const modalContentStyle = `
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+    `;
+
+    gameOverModal.querySelector('.game-over-modal-content').style.cssText = modalContentStyle;
+
+    const closeButton = gameOverModal.querySelector('.close');
+    closeButton.style.cssText = `
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    `;
+
+    document.body.appendChild(gameOverModal);
+
+    closeButton.onclick = function() {
+        document.body.removeChild(gameOverModal);
+    };
+
+    gameOverModal.onclick = function(event) {
+        if (event.target === gameOverModal) {
+            document.body.removeChild(gameOverModal);
+        }
+    };
+
     gameStarted = false;
+    updateCircles();
 }
 
 function clearGameOverMessage() {
@@ -287,11 +298,11 @@ function attachCircleEventListeners() {
     circles.forEach((circle, index) => {
         circle.addEventListener('click', (event) => {
             event.preventDefault();
-            if (index < currentQuestionSet.length && gameStarted) {
+            if (index < currentQuestionSet.length && (gameStarted || answeredQuestions.size === 5)) {
                 clearInterval(timer);
                 currentQuestionIndex = index;
                 displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
-                if (!answeredQuestions.has(index)) {
+                if (!answeredQuestions.has(index) && answeredQuestions.size < 5) {
                     startTimer();
                 }
             }
@@ -349,17 +360,19 @@ function handleTimeUp() {
     labels[correctIndex].style.backgroundColor = 'green';
     labels[correctIndex].style.color = 'white';
 
-    if (answeredQuestions.size === 5) {
-        endGame();
-    } else {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentQuestionSet.length) {
-            displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
-            startTimer();
-        } else {
+    setTimeout(() => {
+        if (answeredQuestions.size === 5) {
             endGame();
+        } else {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuestionSet.length) {
+                displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+                startTimer();
+            } else {
+                endGame();
+            }
         }
-    }
+    }, 2000);
 }
 
 function stopTimerAndSounds() {
@@ -403,7 +416,6 @@ function displaySelectDifficultyMessage() {
     const startButton = document.querySelector('#startButton');
     const circleContainer = document.querySelector('.circle-container');
 
-    questionElement.textContent = "Select difficulty to start a trivia";
     optionsElement.innerHTML = '';
     timerElement.style.display = 'none';
     startButton.style.display = 'block';
@@ -418,7 +430,6 @@ async function initGame() {
         return;
     }
 
-    // Reset category and difficulty
     currentCategory = null;
     currentDifficulty = null;
 
@@ -429,7 +440,7 @@ async function initGame() {
     categoryCards.forEach(card => {
         card.addEventListener('click', () => {
             const category = card.querySelector('h1').textContent;
-            currentCategory = category; // Store the selected category
+            currentCategory = category;
             modal.style.display = "block";
             displaySelectDifficultyMessage();
         });
