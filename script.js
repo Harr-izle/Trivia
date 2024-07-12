@@ -78,6 +78,7 @@ function displayQuestion(question, index) {
     const optionsElement = document.querySelector('.options');
     const timerElement = document.querySelector('.timer');
     const circleContainer = document.querySelector('.circle-container');
+    const startButton = document.querySelector('#startButton');
 
     questionElement.textContent = `Question ${index + 1}: ${question.question}`;
     optionsElement.innerHTML = '';
@@ -110,11 +111,17 @@ function displayQuestion(question, index) {
         optionsElement.appendChild(label);
     });
 
-    if (answeredQuestions.size < 5) {
-        timerElement.style.display = 'block';
-    } else {
+    if (answeredQuestions.size === 5) {
         timerElement.style.display = 'none';
+        startButton.style.display = 'none';
+    } else if (answeredQuestions.size < 5 && !gameStarted) {
+        timerElement.style.display = 'none';
+        startButton.style.display = 'block';
+    } else {
+        timerElement.style.display = 'block';
+        startButton.style.display = 'none';
     }
+    
     circleContainer.style.display = 'flex';
 
     updateCircles();
@@ -164,7 +171,7 @@ function checkAnswer(event) {
                 startTimer();
             }
         }
-    }, 4000);
+    }, 2000);
 }
 
 function endGame() {
@@ -179,8 +186,15 @@ function endGame() {
             <p>You scored ${score} out of 5</p>
     `;
 
+    let congratsSoundTimeout;
+
     if (score >= 4) {
         congratsSound.play();
+        congratsSoundTimeout = setTimeout(() => {
+            congratsSound.pause();
+            congratsSound.currentTime = 0;
+        }, 5000); // Stop the sound after 5 seconds
+    
         modalContent += `
             <div class="congratulations">
                 <h5>Congratulations!</h5>
@@ -188,7 +202,7 @@ function endGame() {
             </div>
         `;
     }
-
+    
     modalContent += `
         </div>
     `;
@@ -416,10 +430,53 @@ function displaySelectDifficultyMessage() {
     const startButton = document.querySelector('#startButton');
     const circleContainer = document.querySelector('.circle-container');
 
-    optionsElement.innerHTML = '';
-    timerElement.style.display = 'none';
-    startButton.style.display = 'block';
-    circleContainer.style.display = 'none';
+    const stateKey = `${currentCategory}-${currentDifficulty}`;
+    const currentState = gameState[stateKey];
+
+    if (currentState && currentState.answered.length === 5) {
+        // This difficulty level has been completed
+        startButton.style.display = 'none';
+        timerElement.style.display = 'none';
+        circleContainer.style.display = 'flex';
+        
+        // Load the completed questions and answers
+        currentQuestionSet = currentState.questions;
+        currentQuestionIndex = 0;
+        score = currentState.score;
+        answeredQuestions = new Set(currentState.answered);
+        
+        // Display the first question to show the answered state
+        displayQuestion(currentQuestionSet[0], 0);
+        
+        // Show the game over modal with the score
+        showGameOverModal();
+        
+        // Update circles to reflect answered questions
+        updateCircles();
+    } else if (currentState) {
+        // This difficulty level has been started but not completed
+        startButton.style.display = 'block';
+        timerElement.style.display = 'none';
+        circleContainer.style.display = 'flex';
+        
+        // Load the in-progress questions and answers
+        currentQuestionSet = currentState.questions;
+        currentQuestionIndex = currentState.currentIndex;
+        score = currentState.score;
+        answeredQuestions = new Set(currentState.answered);
+        
+        // Display the current question
+        displayQuestion(currentQuestionSet[currentQuestionIndex], currentQuestionIndex);
+        
+        // Update circles to reflect answered questions
+        updateCircles();
+    } else {
+        // This difficulty level hasn't been started
+        optionsElement.innerHTML = '';
+        timerElement.style.display = 'none';
+        startButton.style.display = 'block';
+        circleContainer.style.display = 'none';
+    }
 }
 
 async function initGame() {
@@ -451,6 +508,7 @@ async function initGame() {
         stopTimerAndSounds();
         location.reload();
     };
+
 
     window.onclick = function(event) {
         if (event.target == modal) {
