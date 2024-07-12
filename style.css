@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 
 * {
     margin: 0;
@@ -7,6 +7,7 @@
 
 body, html {
     height: 100%;
+    font-family: "Mouse Memoirs", sans-serif;
 }
 
 /* landingpage */
@@ -137,6 +138,13 @@ body, html {
 }
 
 .modal-content p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.modal-content h6{
     margin-top: 30px;
     font-size: 30px;
     font-weight: bold;
@@ -158,9 +166,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
     width: 150px;
-    height: 250px;
+    height: 150px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
                 0 0 30px rgba(20, 20, 255, 0.4);
@@ -192,13 +200,20 @@ body, html {
     background-color: #020232;
     width: 50%;
     height: 400px;
-    margin-top: 50px;  
+    margin-top: 20px;  
 }
+.styled-text {
+    font-size: 20px;                
+    font-weight: bold;     
+    text-align: center;    
+    margin-top: 10px;      
+}
+
 
 .question {
     font-size: 18px;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
 }
 
@@ -235,14 +250,20 @@ body, html {
 }
 #startButton{
     position: absolute;
-    width: 60px;
+    width: 150px;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
-    top: 130px;
+    top: 250px;
+    margin-left: 150px;
     color: white;
     background-color: green;
     border: none;
+    transition: 0.2s ease-in;
+    
+}
+#startButton:hover{
+    background-color: rgb(60, 179, 113);
     
 }
 .options label {
@@ -326,3 +347,4 @@ body, html {
 .fa-solid, .fa-sharp {
     animation: pulse 3s ease-in-out infinite alternate;
 }
+

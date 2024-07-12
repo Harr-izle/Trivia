@@ -34,7 +34,7 @@
       "difficulty": "easy",
       "category": "Geography",
       "question_number":"3",
-      "question": "Where would you find the &quot;Spanish Steps&quot;?",
+      "question": "Where would you find the Spanish Steps?",
       "correct_answer": "Rome, Italy",
       "answers": [
           "Rome, Italy",
@@ -342,7 +342,7 @@
       "difficulty": "medium",
       "category": "History",
       "question_number":"5",
-      "question": "Which Louis was known as &#039;The Sun King of France&#039;?",
+      "question": "Which Louis was known as 'The Sun King of France'?",
       "correct_answer": "Louis XIV",
       "answers": [
         "Louis XIII",
@@ -356,7 +356,7 @@
       "difficulty": "hard",
       "category": "History",
       "question_number":"1",
-      "question": "What did the first vending machines in the early 1880&#039;s dispense?",
+      "question": "What did the first vending machines in the early dispense?",
       "correct_answer": "Post cards",
       "answers": [
         "Alcohol",
@@ -468,7 +468,7 @@
       "difficulty": "easy",
       "category": "Music",
       "question_number":"4",
-      "question": "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song &quot;Paper Planes&quot;?",
+      "question": "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song 'Paper Planes'?",
       "correct_answer": "M.I.A.",
       "answers": [
         "K.I.A.",
@@ -524,7 +524,7 @@
       "difficulty": "medium",
       "category": "Music",
       "question_number":"3",
-      "question": "Who had a 1973 hit with the song &#039;Hocus Pocus&#039;?",
+      "question": "Who had a 1973 hit with the song Hocus Pocus?",
       "correct_answer": "Focus",
       "answers": [
           "Focus",
@@ -538,7 +538,7 @@
       "difficulty": "medium",
       "category": "Music",
       "question_number":"4",
-      "question": "When did The Beatles release the LP &quot;Please Please Me&quot;?",
+      "question": "When did The Beatles release the LP Please Please Me?",
       "correct_answer": "1963",
       "answers": [
         "1970",
@@ -552,7 +552,7 @@
       "difficulty": "medium",
       "category": "Music",
       "question_number":"5",
-      "question": "Which Beatle wrote and sang the song &quot;Why Don&#039;t We Do It in the Road&quot; after being inspired by seeing two monkeys copulating in the street?",
+      "question": "Which Beatle wrote and sang the song Why Dont We Do It in the Road after being inspired by seeing two monkeys copulating in the street?",
       "correct_answer": "Paul",
       "answers": [
         "John",
@@ -594,7 +594,7 @@
       "difficulty": "hard",
       "category": "Music",
       "question_number":"3",
-      "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+      "question": "On which Beatles album would you find the song Eleanor Rigby?",
       "correct_answer": "Revolver",
       "answers": [
         "Help!",
@@ -622,7 +622,7 @@
       "difficulty": "hard",
       "category": "Music",
       "question_number":"5",
-      "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
+      "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume Chet Faker?",
       "correct_answer": "Left Alone",
       "answers": [
         "What About Us",
@@ -678,7 +678,7 @@
       "difficulty": "easy",
       "category": "Science",
       "question_number":"4",
-      "question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
+      "question": "What animal takes part in Schrödinger's most famous thought experiment?",
       "correct_answer": "Cat",
       "answers": [
         "Dog",
@@ -818,7 +818,7 @@
       "difficulty": "hard",
       "category": "Science",
       "question_number":"4",
-      "question": "Which of the following liquids is least viscous? Assume temperature is 25&deg;C.",
+      "question": "Which of the following liquids is least viscous? Assume temperature is 25°C",
       "correct_answer": "Acetone",
       "answers": [
           "Acetone",
@@ -944,7 +944,7 @@
       "difficulty": "medium",
       "category": "Sports",
       "question_number":"3",
-      "question": "Which soccer team won the Copa Am&eacute;rica Centenario 2016?",
+      "question": "hich soccer team won the Copa América Centenario 2016?",
       "correct_answer": "Chile",
       "answers": [
         "Argentina",
@@ -1001,7 +1001,7 @@
       "difficulty": "hard",
       "category": "Sports",
       "question_number":"2",
-      "question": "Which English football team is nicknamed The Tigers&#039;?",
+      "question": "Which English football team is nicknamed The Tigers?",
       "correct_answer": "Hull City",
       "answers": [
         "Hull City",
@@ -1029,7 +1029,7 @@
       "difficulty": "hard",
       "category": "Sports",
       "question_number":"4",
-      "question": "Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
+      "question": "Which Italian footballer told Neuer where he's putting his shot and dragged it wide during the match Italy-Germany, UEFA EURO 2016?",
       "correct_answer": "Pelle",
       "answers": [
         "Insigne",
